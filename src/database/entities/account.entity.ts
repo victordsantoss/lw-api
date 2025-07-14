@@ -8,7 +8,6 @@ import {
   ManyToOne,
   OneToMany,
   JoinColumn,
-  Unique,
 } from 'typeorm';
 import { User } from './user.entity';
 import { AccountStatement } from './account-statement.entity';
@@ -26,7 +25,6 @@ export enum AccountStatus {
   CLOSED = 'CLOSED',
 }
 
-@Unique(['accountNumber', 'agency', 'user.id'])
 @Entity({ name: 'tb_account' })
 export class Account {
   @PrimaryGeneratedColumn('uuid', {

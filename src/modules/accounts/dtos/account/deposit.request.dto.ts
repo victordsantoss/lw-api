@@ -36,6 +36,15 @@ export class DepositRequestDto {
   origin?: string;
 
   @ApiProperty({
+    description: 'Descrição da transação',
+    example: 'Descrição da transação',
+    required: false,
+  })
+  @IsOptional()
+  @IsString()
+  description?: string;
+
+  @ApiProperty({
     description: 'Valor da transação',
     example: 10,
     minimum: 0.01,

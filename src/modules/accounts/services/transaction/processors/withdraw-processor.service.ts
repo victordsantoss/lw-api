@@ -45,7 +45,7 @@ export class WithdrawProcessor implements ITransactionProcessor {
       transactionType: TransactionType.DEBIT,
       category: TransactionCategory.WITHDRAW,
       balance: eventData.balance,
-      description: 'Saque via evento',
+      description: eventData.description || '',
       processedAt: new Date(),
     });
 
