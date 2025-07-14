@@ -423,6 +423,7 @@ npm run seed:roles
 npm run test            # Executar testes unitários
 
 npm run test:cov        # Executar testes com cobertura
+<img width="765" height="122" alt="Captura de Tela 2025-07-14 às 09 40 12" src="https://github.com/user-attachments/assets/236c197f-90fb-40eb-a26a-4bc9200b72a5" />
 
 # Seeds
 npm run seed:roles      # Popular tabela de roles
