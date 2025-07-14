@@ -2,7 +2,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsEnum, IsNumber, Min } from 'class-validator';
 import { Transform, Type } from 'class-transformer';
 import { IAccountDto } from './account.dto';
-import { TransactionType } from 'src/database/entities/account-statement.entity';
+import { TransactionType } from '../../../../database/entities/account-statement.entity';
 
 export class CreateAccountRequestDto extends IAccountDto {
   @ApiProperty({

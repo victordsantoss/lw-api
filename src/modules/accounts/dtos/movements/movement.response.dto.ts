@@ -30,6 +30,27 @@ export class MovementResponseDto {
   accountNumber: string;
 
   @ApiProperty({
+    description: 'ID da conta de destino',
+    example: '550e8400-e29b-41d4-a716-446655440000',
+    required: false,
+  })
+  destinationAccountId?: string;
+
+  @ApiProperty({
+    description: 'Nome da conta de destino',
+    example: 'Conta Destino',
+    required: false,
+  })
+  destinationAccountName?: string;
+
+  @ApiProperty({
+    description: 'Número da conta de destino',
+    example: '987654321',
+    required: false,
+  })
+  destinationAccountNumber?: string;
+
+  @ApiProperty({
     description: 'Tipo da transação',
     enum: TransactionType,
     example: TransactionType.DEPOSIT,

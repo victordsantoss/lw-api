@@ -3,10 +3,10 @@ import { ITransactionProcessor } from './transaction-processor.interface';
 import { IStatementRepository } from '../../../repositories/statement/statement.repository.interface';
 import { DepositRequestDto } from '../../../dtos/account/deposit.request.dto';
 import { DepositResponseDto } from '../../../dtos/account/deposit.response.dto';
-import { IAccountRepository } from 'src/modules/accounts/repositories/account/account.repository.interface';
-import { TransactionCategory } from 'src/database/entities/account-statement.entity';
-import { TransactionType } from 'src/database/entities/account-statement.entity';
-import { Account } from 'src/database/entities/account.entity';
+import { IAccountRepository } from '../../../repositories/account/account.repository.interface';
+import { TransactionCategory } from '../../../../../database/entities/account-statement.entity';
+import { TransactionType } from '../../../../../database/entities/account-statement.entity';
+import { Account } from '../../../../../database/entities/account.entity';
 
 @Injectable()
 export class DepositProcessor implements ITransactionProcessor {
@@ -17,7 +17,7 @@ export class DepositProcessor implements ITransactionProcessor {
     private readonly statementRepository: IStatementRepository,
     @Inject('IAccountRepository')
     private readonly accountRepository: IAccountRepository,
-  ) {}
+  ) { }
 
   async process(eventData: DepositRequestDto): Promise<DepositResponseDto> {
     this.logger.log(

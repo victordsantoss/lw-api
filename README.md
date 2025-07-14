@@ -421,20 +421,16 @@ npm run seed:roles
 
 # Testes
 npm run test            # Executar testes unitários
-npm run test:cov        # Executar testes com cobertura
 
-# Qualidade de Código
-npm run lint            # Executar linting
-npm run format          # Formatar código
+npm run test:cov        # Executar testes com cobertura
 
 # Seeds
 npm run seed:roles      # Popular tabela de roles
-```
 
 ### Documentação da API
 
-Após iniciar o servidor, a documentação Swagger estará disponível em:
+Após iniciar o servidor, a documentação Swagger estará disponível em: 
 ```
-http://localhost:3000/api
-```
+ http://localhost:3000/api 
 
+```
