@@ -433,5 +433,7 @@ npm run seed:roles      # Popular tabela de roles
 Após iniciar o servidor, a documentação Swagger estará disponível em: 
 ```
  http://localhost:3000/api 
-
 ```
+
+<img width="1667" height="897" alt="Captura de Tela 2025-07-14 às 10 26 11" src="https://github.com/user-attachments/assets/dc777736-b511-4177-902e-88710276ab3e" />
+
